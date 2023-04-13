@@ -517,6 +517,7 @@
     bottom: -70%;
     right: -15%;
     user-select: none;
+    z-index: -1;
 
 }
 .skill-container-left{
@@ -713,7 +714,7 @@
 
 @media (max-width: 414px){
 #wrapper{
-        width: 1500px;
+        width: 1400px;
     }
  .hero-section {
     flex-direction: column;
