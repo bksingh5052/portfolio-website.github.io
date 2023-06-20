@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio-Website</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -77,7 +78,7 @@
             <h2 class="page-heading">Projects</h2>
 
             <div class="project-container">
-                <div class="project-card project-card-left" id="project1">
+                <div class="project-card project-card-left" id="project1" data-aos="fade-right">
                     <div class="project-number number-right">01</div>
 
                     <div class="project-content project-content-left">
@@ -85,20 +86,13 @@
                             <img class="project-skill" src=".\images\HTML.png" />
                             <img class="project-skill" src=".\images\CSS.png" />
                             <img class="project-skill" src=".\images\Javascript.svg" />
-                            <img class="project-skill" src=".\images\Express.png" />
-                            <img class="project-skill" src=".\images\NextJsCircle.png" />
                             <img class="project-skill" src=".\images\Tailwind.png" />
-                            <img class="project-skill" src=".\images\Nodejs.svg" />
-                            <img class="project-skill" src=".\images\MongoDB.svg" />
-                            <img class="project-skill" src=".\images\Redux.svg" />
-                            <img class="project-skill" src=".\images\Vercel.svg" />
                         </div>
 
-                        <div class="project-heading">Coming Soon</div>
+                        <div class="project-heading">Razorpay Clone</div>
 
                         <p class="project-discription">
-                            Its is a car modification copany which provide you sheets to
-                            protect your car from scratch
+                           It is a Razorpay Clone WEbsite. I made it by using HTML CSS and tailwind css
                         </p>
 
                         <div class="btn-grp">
@@ -110,8 +104,7 @@
                         </div>
                     </div>
                 </div>
-
-                <div class="project-card project-card-right" id="project2">
+                <div class="project-card project-card-right" id="project2" data-aos="fade-left">
                     <div class="project-number number-left">02</div>
 
                     <div class="project-content project-content-right">
@@ -141,7 +134,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card project-card-left" id="project3">
+                <div class="project-card project-card-left" id="project3" data-aos="fade-right">
                     <div class="project-number number-right">03</div>
 
                     <div class="project-content project-content-left">
@@ -170,7 +163,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="project-card project-card-right" id="project4">
+                <div class="project-card project-card-right" id="project4" data-aos="fade-left">
                     <div class="project-number number-left">04</div>
 
                     <div class="project-content project-content-right">
@@ -214,7 +207,7 @@
                         voluptates tenetur qui ipsa nulla culpa itaque?</p>
                 </div>
             </div>
-            <div class="skill-container-right">
+            <div class="skill-container-right" data-aos="zoom-in-up">
                 <img src="./images/blob vector.png" class="blob-style absolute" alt="" />
 
                 <img src="./images/HTML.png" alt="" class="skills-logo" />
@@ -249,14 +242,14 @@
                     <form action="https://formspree.io/f/xdovpwnw"
                     method="POST">
                         <div class="formfield-container">
-                            <input class="formfield" name="name" type="text" placeholder="Enter your name" required autocomplete="off">
-                            <input class="formfield" name="email" type="email" placeholder="Enter your email address" required autocomplete="off">
-                            <input class="formfield" name="subject" type="text" placeholder="Enter your subject" required autocomplete="off">
+                            <input class="formfield" name="name" type="text" placeholder="Enter your name" required autocomplete="off" data-aos="fade-right">
+                            <input class="formfield" name="email" type="email" placeholder="Enter your email address" required autocomplete="off" data-aos="fade-left">
+                            <input class="formfield" name="subject" type="text" placeholder="Enter your subject" required autocomplete="off" data-aos="fade-right">
                             <textarea name="message" cols="30" rows="10" class="formfield textarea"
-                                placeholder="Enter your message" required autocomplete="off"></textarea>
+                                placeholder="Enter your message" required autocomplete="off" data-aos="fade-left"></textarea>
                         </div>
                         <div class="formbtn-center">
-                        <button type="submit" class="pink-btn send-message">Send Message <i
+                        <button type="submit" class="pink-btn send-message" data-aos="zoom-in-up">Send Message <i 
                                 class="fa-solid fa-paper-plane"></i></button>
                             </div>
                     </form>
@@ -300,6 +293,14 @@
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://kit.fontawesome.com/c71eaea5b2.js" crossorigin="anonymous"></script>
     <script src="index.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        offset: 300,
+        duration : 1000
+      });
+    </script>
 </body>
 
 </html>
